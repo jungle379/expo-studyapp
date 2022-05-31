@@ -8,17 +8,17 @@ function HomeScreen({ navigation }) {
     <View style={{ flex: 1, alignItems: "center", justifyContent: "center" }}>
       <Text>Home Screen</Text>
       <Button
-        title="Go to Details"
-        onPress={() => navigation.navigate("Details")}
+        title="サインインする"
+        onPress={() => navigation.navigate("SignIn")}
       />
     </View>
   );
 }
 
-function DetailsScreen() {
+function SignInScreen() {
   return (
     <View style={{ flex: 1, alignItems: "center", justifyContent: "center" }}>
-      <Text>Details Screen</Text>
+      <Text>サインインしてください</Text>
     </View>
   );
 }
@@ -30,7 +30,7 @@ function App() {
     <NavigationContainer>
       <Stack.Navigator>
         <Stack.Screen name="Home" component={HomeScreen} />
-        <Stack.Screen name="Details" component={DetailsScreen} />
+        <Stack.Screen name="SignIn" component={SignInScreen} />
       </Stack.Navigator>
     </NavigationContainer>
   );
