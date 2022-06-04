@@ -114,7 +114,7 @@ function LogInScreen({ navigation }) {
 function IndexScreen({ navigation }) {
   return (
     <View style={{ flex: 1, alignItems: "center", justifyContent: "center" }}>
-      <Text>メインページ</Text>
+      <Text>メインページ!!</Text>
     </View>
   );
 }
