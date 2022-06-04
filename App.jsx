@@ -76,7 +76,7 @@ function ResultScreen({ navigation }) {
 }
 function LogInScreen({ navigation }) {
   return (
-    <View>
+    <View style={{ flex: 1, alignItems: "center", justifyContent: "center" }}>
       <Text style={{ padding: 10 }}>メールアドレス</Text>
       <TextInput
         style={{
@@ -100,7 +100,7 @@ function LogInScreen({ navigation }) {
       <Text style={{ margin: 20 }}>ログイン</Text>
       <Button
         title="ログイン！！"
-        onPress={() => navigation.navigate("LogIn")}
+        onPress={() => navigation.navigate("Index")}
       />
       <Text style={{ margin: 20 }}>ホームへ戻る</Text>
       <Button
@@ -114,11 +114,7 @@ function LogInScreen({ navigation }) {
 function IndexScreen({ navigation }) {
   return (
     <View style={{ flex: 1, alignItems: "center", justifyContent: "center" }}>
-      <Text>サインインページへ</Text>
-      <Button
-        title="サインインする"
-        onPress={() => navigation.navigate("SignIn")}
-      />
+      <Text>メインページ</Text>
     </View>
   );
 }
