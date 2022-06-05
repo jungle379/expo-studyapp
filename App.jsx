@@ -8,9 +8,11 @@ function HomeScreen({ navigation }) {
     <View
       style={{
         flex: 1,
-        flexDirection: "column",
-        alignItems: "flex-end",
-        marginRight: 20,
+        flexDirection: "row",
+        alignItems: "flex-start",
+        justifyContent: "flex-end",
+        marginTop: 20,
+        marginRight: 40,
       }}
     >
       <Text style={{ padding: 20 }}></Text>
@@ -26,45 +28,54 @@ function HomeScreen({ navigation }) {
 
 function SignInScreen({ navigation }) {
   return (
-    <View style={{ flex: 1, alignItems: "center", justifyContent: "center" }}>
-      <Text style={{ padding: 10 }}>ニックネーム</Text>
-      <TextInput
+    <>
+      <View style={{ flex: 1, alignItems: "center", justifyContent: "center" }}>
+        <Text style={{ padding: 10, margin: 10 }}>ニックネーム</Text>
+        <TextInput
+          style={{
+            width: "50%",
+            height: "5%",
+            borderBottomWidth: 1,
+            borderBottomColor: "#ccc",
+          }}
+          placeholder="例:田中 太郎"
+        />
+        <Text style={{ padding: 10, margin: 10 }}>メールアドレス</Text>
+        <TextInput
+          style={{
+            width: "50%",
+            height: "5%",
+            borderBottomWidth: 1,
+            borderBottomColor: "#ccc",
+          }}
+          placeholder="例:tanaka@gmail.com"
+        />
+        <Text style={{ padding: 10, margin: 10 }}>パスワード</Text>
+        <TextInput
+          style={{
+            width: "50%",
+            height: "5%",
+            borderBottomWidth: 1,
+            borderBottomColor: "#ccc",
+          }}
+          placeholder="例:tanaka123"
+        />
+      </View>
+      <View
         style={{
-          width: "50%",
-          height: "5%",
-          borderBottomWidth: 1,
-          borderBottomColor: "#ccc",
+          flex: 1,
+          flexDirection: "row",
+          alignItems: "flex-start",
+          justifyContent: "center",
         }}
-        placeholder="例:田中 太郎"
-      />
-      <Text style={{ padding: 10 }}>メールアドレス</Text>
-      <TextInput
-        style={{
-          width: "50%",
-          height: "5%",
-          borderBottomWidth: 1,
-          borderBottomColor: "#ccc",
-        }}
-        placeholder="例:tanaka@gmail.com"
-      />{" "}
-      <Text style={{ padding: 10 }}>パスワード</Text>
-      <TextInput
-        style={{
-          width: "50%",
-          height: "5%",
-          borderBottomWidth: 1,
-          borderBottomColor: "#ccc",
-        }}
-        placeholder="例:tanaka123"
-      />
-      <Text style={{ margin: 20 }}>登録する</Text>
-      <Button title="登録する" onPress={() => navigation.navigate("Result")} />
-      <Text style={{ margin: 20 }}>ホームへ戻る</Text>
-      <Button
-        title="ホームへ戻る"
-        onPress={() => navigation.navigate("Home")}
-      />
-    </View>
+      >
+        <Button
+          title="登録する"
+          onPress={() => navigation.navigate("Result")}
+        />
+        <Button title="ホームへ" onPress={() => navigation.navigate("Home")} />
+      </View>
+    </>
   );
 }
 function ResultScreen({ navigation }) {
