@@ -66,7 +66,7 @@ function SignInScreen({ navigation }) {
           flex: 1,
           flexDirection: "row",
           alignItems: "flex-start",
-          justifyContent: "center",
+          justifyContent: "space-around",
         }}
       >
         <Button
@@ -81,7 +81,7 @@ function SignInScreen({ navigation }) {
 function ResultScreen({ navigation }) {
   return (
     <View style={{ flex: 1, alignItems: "center", justifyContent: "center" }}>
-      <Text>登録が完了しました！</Text>
+      <Text style={{ fontSize: 60, margin: 40 }}>登録が完了しました！</Text>
       <Button
         title="メインページへ"
         onPress={() => navigation.navigate("Index")}
