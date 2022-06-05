@@ -5,17 +5,21 @@ import { createNativeStackNavigator } from "@react-navigation/native-stack";
 
 function HomeScreen({ navigation }) {
   return (
-    <View style={{ flex: 1, alignItems: "center", justifyContent: "center" }}>
-      <Text>サインインページへ</Text>
+    <View
+      style={{
+        flex: 1,
+        flexDirection: "column",
+        alignItems: "flex-end",
+        marginRight: 20,
+      }}
+    >
+      <Text style={{ padding: 20 }}></Text>
       <Button
-        title="サインインする"
+        title="サインイン"
         onPress={() => navigation.navigate("SignIn")}
       />
-      <Text>ログインページへ</Text>
-      <Button
-        title="ログインする"
-        onPress={() => navigation.navigate("LogIn")}
-      />
+      <Text style={{ padding: 20 }}></Text>
+      <Button title="ログイン" onPress={() => navigation.navigate("LogIn")} />
     </View>
   );
 }
@@ -110,25 +114,49 @@ function LogInScreen({ navigation }) {
     </View>
   );
 }
-
 function IndexScreen({ navigation }) {
   return (
     <View style={{ flex: 1, alignItems: "center", justifyContent: "center" }}>
-      <Text>メインページ!!</Text>
+      <Text>新規登録ページへ</Text>
+      <Button
+        title="新規登録へ"
+        onPress={() => navigation.navigate("Create")}
+      ></Button>
+    </View>
+  );
+}
+
+function CreateScreen({ navigation }) {
+  return (
+    <View style={{ flex: 1, alignItems: "center", justifyContent: "center" }}>
+      <Text>メインページへ</Text>
+      <Button
+        title="メインページへ"
+        onPress={() => navigation.navigate("Create")}
+      ></Button>
     </View>
   );
 }
 
 const Stack = createNativeStackNavigator();
 
-function App() {
+function App({ navigation }) {
   return (
     <NavigationContainer>
       <Stack.Navigator>
         <Stack.Screen
           name="Home"
           component={HomeScreen}
-          options={{ title: "MY APP" }}
+          options={{
+            title: "MY APP",
+            // headerRight: () => (
+            //   <Button
+            //     title="サインイン"
+            //     style={{ marginRight: 20 }}
+            //     onPress={() => navigation.navigate("SignIn")}
+            //   ></Button>
+            // ),
+          }}
         />
         <Stack.Screen
           name="SignIn"
@@ -149,6 +177,11 @@ function App() {
           name="Index"
           component={IndexScreen}
           options={{ title: "メインページ" }}
+        />
+        <Stack.Screen
+          name="Create"
+          component={CreateScreen}
+          options={{ title: "新規登録ページ" }}
         />
       </Stack.Navigator>
     </NavigationContainer>
