@@ -53,7 +53,7 @@ function CreateScreen({ navigation }) {
             borderBottomWidth: 1,
             borderBottomColor: "#ccc",
           }}
-          placeholder="例:タイトル"
+          placeholder="例:タイトルを入力してください"
         />
         <Text style={{ padding: 10 }}>内容</Text>
         <TextInput
