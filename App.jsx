@@ -2,6 +2,9 @@ import * as React from "react";
 import { Button, View, Text, TextInput } from "react-native";
 import { NavigationContainer } from "@react-navigation/native";
 import { createNativeStackNavigator } from "@react-navigation/native-stack";
+import { MainScreen } from "./src/screens/Main";
+import { LogInScreen } from "./src/screens/LogIn";
+import { SignInScreen } from "./src/screens/SignIn";
 
 function HomeScreen({ navigation }) {
   return (
@@ -26,11 +29,23 @@ function HomeScreen({ navigation }) {
   );
 }
 
-function SignInScreen({ navigation }) {
+function ResultScreen({ navigation }) {
+  return (
+    <View style={{ flex: 1, alignItems: "center", justifyContent: "center" }}>
+      <Text style={{ fontSize: 60, margin: 40 }}>登録が完了しました！</Text>
+      <Button
+        title="メインページへ"
+        onPress={() => navigation.navigate("Main")}
+      />
+    </View>
+  );
+}
+
+function CreateScreen({ navigation }) {
   return (
     <>
       <View style={{ flex: 1, alignItems: "center", justifyContent: "center" }}>
-        <Text style={{ padding: 10, margin: 10 }}>ニックネーム</Text>
+        <Text style={{ padding: 10 }}>タイトル</Text>
         <TextInput
           style={{
             width: "50%",
@@ -38,27 +53,17 @@ function SignInScreen({ navigation }) {
             borderBottomWidth: 1,
             borderBottomColor: "#ccc",
           }}
-          placeholder="例:田中 太郎"
+          placeholder="例:タイトル"
         />
-        <Text style={{ padding: 10, margin: 10 }}>メールアドレス</Text>
+        <Text style={{ padding: 10 }}>内容</Text>
         <TextInput
           style={{
             width: "50%",
-            height: "5%",
+            height: "30%",
             borderBottomWidth: 1,
             borderBottomColor: "#ccc",
           }}
-          placeholder="例:tanaka@gmail.com"
-        />
-        <Text style={{ padding: 10, margin: 10 }}>パスワード</Text>
-        <TextInput
-          style={{
-            width: "50%",
-            height: "5%",
-            borderBottomWidth: 1,
-            borderBottomColor: "#ccc",
-          }}
-          placeholder="例:tanaka123"
+          placeholder="投稿する内容を入力してください"
         />
       </View>
       <View
@@ -66,92 +71,26 @@ function SignInScreen({ navigation }) {
           flex: 1,
           flexDirection: "row",
           alignItems: "flex-start",
-          justifyContent: "space-around",
+          justifyContent: "center",
         }}
       >
         <Button
-          title="登録する"
-          onPress={() => navigation.navigate("Result")}
-        />
-        <Button title="ホームへ" onPress={() => navigation.navigate("Home")} />
+          title="投稿"
+          onPress={() => navigation.navigate("Post")}
+        ></Button>
+        <Text style={{ margin: 10 }}></Text>
+        <Button
+          title="戻る"
+          onPress={() => navigation.navigate("Main")}
+        ></Button>
       </View>
     </>
-  );
-}
-function ResultScreen({ navigation }) {
-  return (
-    <View style={{ flex: 1, alignItems: "center", justifyContent: "center" }}>
-      <Text style={{ fontSize: 60, margin: 40 }}>登録が完了しました！</Text>
-      <Button
-        title="メインページへ"
-        onPress={() => navigation.navigate("Index")}
-      />
-    </View>
-  );
-}
-function LogInScreen({ navigation }) {
-  return (
-    <View style={{ flex: 1, alignItems: "center", justifyContent: "center" }}>
-      <Text style={{ padding: 10 }}>メールアドレス</Text>
-      <TextInput
-        style={{
-          width: "50%",
-          height: "5%",
-          borderBottomWidth: 1,
-          borderBottomColor: "#ccc",
-        }}
-        placeholder="例:tanaka@gmail.com"
-      />{" "}
-      <Text style={{ padding: 10 }}>パスワード</Text>
-      <TextInput
-        style={{
-          width: "50%",
-          height: "5%",
-          borderBottomWidth: 1,
-          borderBottomColor: "#ccc",
-        }}
-        placeholder="例:tanaka123"
-      />
-      <Text style={{ margin: 20 }}>ログイン</Text>
-      <Button
-        title="ログイン！！"
-        onPress={() => navigation.navigate("Index")}
-      />
-      <Text style={{ margin: 20 }}>ホームへ戻る</Text>
-      <Button
-        title="ホームへ戻る"
-        onPress={() => navigation.navigate("Home")}
-      />
-    </View>
-  );
-}
-function IndexScreen({ navigation }) {
-  return (
-    <View style={{ flex: 1, alignItems: "center", justifyContent: "center" }}>
-      <Text>新規登録ページへ</Text>
-      <Button
-        title="新規登録へ"
-        onPress={() => navigation.navigate("Create")}
-      ></Button>
-    </View>
-  );
-}
-
-function CreateScreen({ navigation }) {
-  return (
-    <View style={{ flex: 1, alignItems: "center", justifyContent: "center" }}>
-      <Text>メインページへ</Text>
-      <Button
-        title="メインページへ"
-        onPress={() => navigation.navigate("Create")}
-      ></Button>
-    </View>
   );
 }
 
 const Stack = createNativeStackNavigator();
 
-function App({ navigation }) {
+function App() {
   return (
     <NavigationContainer>
       <Stack.Navigator>
@@ -160,13 +99,6 @@ function App({ navigation }) {
           component={HomeScreen}
           options={{
             title: "MY APP",
-            // headerRight: () => (
-            //   <Button
-            //     title="サインイン"
-            //     style={{ marginRight: 20 }}
-            //     onPress={() => navigation.navigate("SignIn")}
-            //   ></Button>
-            // ),
           }}
         />
         <Stack.Screen
@@ -185,14 +117,14 @@ function App({ navigation }) {
           options={{ title: "ログイン情報入力画面" }}
         />
         <Stack.Screen
-          name="Index"
-          component={IndexScreen}
+          name="Main"
+          component={MainScreen}
           options={{ title: "メインページ" }}
         />
         <Stack.Screen
           name="Create"
           component={CreateScreen}
-          options={{ title: "新規登録ページ" }}
+          options={{ title: "新規投稿ページ" }}
         />
       </Stack.Navigator>
     </NavigationContainer>
