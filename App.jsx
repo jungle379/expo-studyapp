@@ -5,29 +5,25 @@ import { createNativeStackNavigator } from "@react-navigation/native-stack";
 import { MainScreen } from "./src/screens/Main";
 import { LogInScreen } from "./src/screens/LogIn";
 import { SignInScreen } from "./src/screens/SignIn";
+import Header from "./src/components/Header";
 
-function HomeScreen({ navigation }) {
+const HomeScreen = () => {
   return (
-    <View
-      style={{
-        flex: 1,
-        flexDirection: "row",
-        alignItems: "flex-start",
-        justifyContent: "flex-end",
-        marginTop: 20,
-        marginRight: 40,
-      }}
-    >
-      <Text style={{ padding: 20 }}></Text>
-      <Button
-        title="サインイン"
-        onPress={() => navigation.navigate("SignIn")}
-      />
-      <Text style={{ padding: 20 }}></Text>
-      <Button title="ログイン" onPress={() => navigation.navigate("LogIn")} />
-    </View>
+    <>
+      <Header />
+      <View style={{ flex: 1, alignItems: "center", justifyContent: "center" }}>
+        <Text
+          style={{
+            fontsize: 300,
+            height: "30%",
+          }}
+        >
+          まずはサインインorログインをしよう！
+        </Text>
+      </View>
+    </>
   );
-}
+};
 
 function ResultScreen({ navigation }) {
   return (
