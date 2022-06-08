@@ -17,7 +17,7 @@ const HomeScreen = () => {
             fontsize: 100,
           }}
         >
-          まずはサインインorログインをしよう！
+          まずはサインインorログインをしよう!
         </Text>
       </View>
     </>
