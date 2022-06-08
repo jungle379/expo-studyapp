@@ -86,7 +86,7 @@ function App() {
           name="Post"
           component={PostScreen}
           options={{ title: "投稿完了ページ" }}
-        />{" "}
+        />
         <Stack.Screen
           name="MyPage"
           component={MyPageScreen}
