@@ -14,8 +14,7 @@ const HomeScreen = () => {
       <View style={{ flex: 1, alignItems: "center", justifyContent: "center" }}>
         <Text
           style={{
-            fontsize: 300,
-            height: "30%",
+            fontsize: 100,
           }}
         >
           まずはサインインorログインをしよう！
