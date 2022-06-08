@@ -37,7 +37,7 @@ function HomeScreen({ navigation }) {
             fontsize: 100,
           }}
         >
-          まずはサインインorログインをしよう!
+          まずはサインイン/ログインをしよう!
         </Text>
       </View>
     </>

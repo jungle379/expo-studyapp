@@ -9,6 +9,11 @@ export function PostScreen({ navigation }) {
         title="メインページへ"
         onPress={() => navigation.navigate("Main")}
       />
+      <Text>マイページへ</Text>
+      <Button
+        title="マイページ"
+        onPress={() => navigation.navigate("MyPage")}
+      />
     </View>
   );
 }
