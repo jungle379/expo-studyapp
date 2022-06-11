@@ -21,6 +21,7 @@ export function PostScreen({ navigation }) {
         />
       </View>
       <View style={{ flex: 1, alignItems: "center", justifyContent: "center" }}>
+        <Text style={{ fontSize: 60, margin: 10 }}>登録が完了しました！</Text>
         <Text style={{ fontSize: 60, margin: 40 }}></Text>
         <Button
           title="メインページへ"

@@ -21,7 +21,10 @@ export function CreateScreen({ navigation }) {
             width: "50%",
             height: "30%",
             borderBottomWidth: 1,
+            borderTopColor: "#ccc",
             borderBottomColor: "#ccc",
+            borderLeftColor: "#ccc",
+            borderRightColor: "#ccc",
           }}
           placeholder="投稿する内容を入力してください"
         />
