@@ -5,7 +5,7 @@ export function CreateScreen({ navigation }) {
   return (
     <>
       <View style={{ flex: 1, alignItems: "center", justifyContent: "center" }}>
-        <Text style={{ padding: 10 }}>タイトル</Text>
+        <Text style={{ margin: 20, padding: 10 }}>タイトル</Text>
         <TextInput
           style={{
             width: "50%",
@@ -15,16 +15,13 @@ export function CreateScreen({ navigation }) {
           }}
           placeholder="例:タイトルを入力してください"
         />
-        <Text style={{ padding: 10 }}>内容</Text>
+        <Text style={{ margin: 20, padding: 10 }}>内容</Text>
         <TextInput
           style={{
             width: "50%",
             height: "30%",
             borderBottomWidth: 1,
-            borderTopColor: "#ccc",
             borderBottomColor: "#ccc",
-            borderLeftColor: "#ccc",
-            borderRightColor: "#ccc",
           }}
           placeholder="投稿する内容を入力してください"
         />
