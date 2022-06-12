@@ -1,7 +1,6 @@
 import * as React from "react";
 import { NavigationContainer } from "@react-navigation/native";
 import { createNativeStackNavigator } from "@react-navigation/native-stack";
-import { MainScreen } from "./src/screens/Main";
 import { LogInScreen } from "./src/screens/LogIn";
 import { SignInScreen } from "./src/screens/SignIn";
 import { ResultScreen } from "./src/screens/Result";
@@ -37,11 +36,6 @@ function App() {
           name="LogIn"
           component={LogInScreen}
           options={{ title: "ログイン情報入力画面" }}
-        />
-        <Stack.Screen
-          name="Main"
-          component={MainScreen}
-          options={{ title: "メインページ" }}
         />
         <Stack.Screen
           name="Create"

@@ -25,7 +25,7 @@ export function PostScreen({ navigation }) {
         <Text style={{ fontSize: 60, margin: 40 }}></Text>
         <Button
           title="メインページへ"
-          onPress={() => navigation.navigate("Main")}
+          onPress={() => navigation.navigate("Home")}
         />
       </View>
     </>

@@ -22,14 +22,24 @@ export function HomeScreen({ navigation }) {
         <Text style={{ padding: 20 }}></Text>
         <Button title="ログイン" onPress={() => navigation.navigate("LogIn")} />
       </View>
-      <View style={{ flex: 1, alignItems: "center", justifyContent: "center" }}>
-        <Text
-          style={{
-            fontsize: 100,
-          }}
-        >
-          まずはサインイン/ログインをしよう!
-        </Text>
+      <View
+        style={{
+          flex: 1,
+          alignItems: "center",
+          justifyContent: "center",
+          flexDirection: "row",
+        }}
+      >
+        <Text style={{ padding: 20 }}></Text>
+        <Button
+          title="マイページへ"
+          onPress={() => navigation.navigate("MyPage")}
+        />
+        <Text style={{ padding: 20 }}></Text>
+        <Button
+          title="投稿する"
+          onPress={() => navigation.navigate("Create")}
+        />
       </View>
     </>
   );

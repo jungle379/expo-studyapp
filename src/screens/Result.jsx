@@ -8,8 +8,8 @@ export function ResultScreen({ navigation }) {
         アカウントの登録が完了しました！
       </Text>
       <Button
-        title="メインページへ"
-        onPress={() => navigation.navigate("Main")}
+        title="ホームページへ"
+        onPress={() => navigation.navigate("Home")}
       />
     </View>
   );

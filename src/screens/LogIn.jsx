@@ -37,7 +37,7 @@ export function LogInScreen({ navigation }) {
         <Button
           style={{ margin: 20 }}
           title="ログイン"
-          onPress={() => navigation.navigate("Main")}
+          onPress={() => navigation.navigate("Home")}
         />
         <Text style={{ margin: 20 }}></Text>
         <Button title="ホームへ" onPress={() => navigation.navigate("Home")} />
