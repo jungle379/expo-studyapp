@@ -34,13 +34,13 @@ export function LogInScreen({ navigation }) {
           justifyContent: "center",
         }}
       >
-        <Text style={{ margin: 20 }}></Text>
-        <Button title="ログイン" onPress={() => navigation.navigate("Main")} />
-        <Text style={{ margin: 20 }}></Text>
         <Button
-          title="ホームへ戻る"
-          onPress={() => navigation.navigate("Home")}
+          style={{ margin: 20 }}
+          title="ログイン"
+          onPress={() => navigation.navigate("Main")}
         />
+        <Text style={{ margin: 20 }}></Text>
+        <Button title="ホームへ" onPress={() => navigation.navigate("Home")} />
       </View>
     </>
   );

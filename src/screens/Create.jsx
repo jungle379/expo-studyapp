@@ -35,7 +35,7 @@ export function CreateScreen({ navigation }) {
         }}
       >
         <Button
-          title="投稿"
+          title="投稿する"
           onPress={() => navigation.navigate("Post")}
         ></Button>
         <Text style={{ margin: 10 }}></Text>
