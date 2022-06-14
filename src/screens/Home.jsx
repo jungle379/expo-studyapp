@@ -37,7 +37,7 @@ export function HomeScreen({ navigation }) {
         />
         <Text style={{ padding: 20 }}></Text>
         <Button
-          title="投稿する"
+          title="新規投稿する"
           onPress={() => navigation.navigate("Create")}
         />
       </View>
