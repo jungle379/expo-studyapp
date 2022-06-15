@@ -19,13 +19,13 @@ function App() {
           name="Home"
           component={HomeScreen}
           options={{
-            title: "MY APP",
+            title: "ホームページ",
           }}
         />
         <Stack.Screen
           name="SignIn"
           component={SignInScreen}
-          options={{ title: "サインインページ" }}
+          options={{ title: "新規登録ページ" }}
         />
         <Stack.Screen
           name="Result"
