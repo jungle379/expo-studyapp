@@ -32,13 +32,13 @@ export function HomeScreen({ navigation }) {
       >
         <Text style={{ padding: 20 }}></Text>
         <Button
-          title="マイページへ"
-          onPress={() => navigation.navigate("MyPage")}
+          title="新規投稿する"
+          onPress={() => navigation.navigate("Create")}
         />
         <Text style={{ padding: 20 }}></Text>
         <Button
-          title="新規投稿する"
-          onPress={() => navigation.navigate("Create")}
+          title="マイページへ"
+          onPress={() => navigation.navigate("MyPage")}
         />
       </View>
     </>
