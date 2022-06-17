@@ -10,8 +10,8 @@ export function HomeScreen({ navigation }) {
           flexDirection: "row",
           alignItems: "flex-start",
           justifyContent: "flex-end",
-          marginTop: 20,
           paddingRight: 40,
+          backgroundColor: "lightgreen",
         }}
       >
         <Text style={{ padding: 20 }}></Text>
@@ -28,6 +28,8 @@ export function HomeScreen({ navigation }) {
           alignItems: "flex-start",
           justifyContent: "space-evenly",
           flexDirection: "row",
+          backgroundColor: "lightblue",
+          paddingRight: 40,
         }}
       >
         <Text></Text>
@@ -35,7 +37,7 @@ export function HomeScreen({ navigation }) {
           title="新規投稿する"
           onPress={() => navigation.navigate("Create")}
         />
-        <Text style={{ padding: 20 }}></Text>
+        <Text></Text>
         <Button
           title="マイページへ"
           onPress={() => navigation.navigate("MyPage")}
