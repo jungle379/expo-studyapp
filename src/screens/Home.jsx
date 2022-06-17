@@ -25,12 +25,12 @@ export function HomeScreen({ navigation }) {
       <View
         style={{
           flex: 1,
-          alignItems: "center",
-          justifyContent: "center",
+          alignItems: "flex-start",
+          justifyContent: "space-evenly",
           flexDirection: "row",
         }}
       >
-        <Text style={{ padding: 20 }}></Text>
+        <Text></Text>
         <Button
           title="新規投稿する"
           onPress={() => navigation.navigate("Create")}
