@@ -29,7 +29,7 @@ export function HomeScreen({ navigation }) {
           justifyContent: "space-evenly",
           flexDirection: "row",
           backgroundColor: "lightblue",
-          paddingRight: 40,
+          paddingRight: 80,
         }}
       >
         <Text></Text>
