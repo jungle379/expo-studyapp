@@ -32,12 +32,10 @@ export function HomeScreen({ navigation }) {
           paddingRight: 80,
         }}
       >
-        <Text></Text>
         <Button
           title="新規投稿する"
           onPress={() => navigation.navigate("Create")}
         />
-        <Text></Text>
         <Button
           title="マイページへ"
           onPress={() => navigation.navigate("MyPage")}
