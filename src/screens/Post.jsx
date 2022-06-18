@@ -20,7 +20,9 @@ export function PostScreen({ navigation }) {
           onPress={() => navigation.navigate("MyPage")}
         />
       </View>
-      <View style={{ flex: 1, alignItems: "center", justifyContent: "center" }}>
+      <View
+        style={{ flex: 2, alignItems: "center", justifyContent: "flex-start" }}
+      >
         <Text style={{ fontSize: 60, marginBottom: 10 }}>
           投稿が完了しました！
         </Text>
