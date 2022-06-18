@@ -1,12 +1,13 @@
 import * as React from "react";
 import { Button, View, Text } from "react-native";
+import { Image } from "react-native-svg";
 
 export function HomeScreen({ navigation }) {
   return (
     <>
       <View
         style={{
-          flex: 1,
+          flex: 2,
           flexDirection: "row",
           alignItems: "flex-start",
           justifyContent: "flex-end",
@@ -21,6 +22,7 @@ export function HomeScreen({ navigation }) {
         <Text style={{ padding: 20 }}></Text>
         <Button title="ログイン" onPress={() => navigation.navigate("LogIn")} />
       </View>
+      <Image source={require("./../../image/image.png")} />
       <View
         style={{
           flex: 1,
