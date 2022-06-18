@@ -12,6 +12,7 @@ export function HomeScreen({ navigation }) {
           alignItems: "flex-start",
           justifyContent: "flex-end",
           paddingRight: 40,
+          marginTop: 20,
         }}
       >
         <Text style={{ padding: 20 }}></Text>

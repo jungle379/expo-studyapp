@@ -4,7 +4,7 @@ import { Button, View, Text, TextInput } from "react-native";
 export function CreateScreen({ navigation }) {
   return (
     <>
-      <View style={{ flex: 1, alignItems: "center", justifyContent: "center" }}>
+      <View style={{ flex: 2, alignItems: "center", justifyContent: "center" }}>
         <Text style={{ margin: 20, padding: 10 }}>タイトル</Text>
         <TextInput
           style={{
