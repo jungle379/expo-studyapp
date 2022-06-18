@@ -11,7 +11,6 @@ export function HomeScreen({ navigation }) {
           alignItems: "flex-start",
           justifyContent: "flex-end",
           paddingRight: 40,
-          backgroundColor: "lightgreen",
         }}
       >
         <Text style={{ padding: 20 }}></Text>
@@ -28,8 +27,6 @@ export function HomeScreen({ navigation }) {
           alignItems: "flex-start",
           justifyContent: "space-evenly",
           flexDirection: "row",
-          backgroundColor: "lightblue",
-          paddingRight: 80,
         }}
       >
         <Button
