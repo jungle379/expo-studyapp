@@ -23,7 +23,6 @@ export function HomeScreen({ navigation }) {
         <Text style={{ padding: 20 }}></Text>
         <Button title="ログイン" onPress={() => navigation.navigate("LogIn")} />
       </View>
-      <Image source={require("./../../image/image.png")} />
       <View
         style={{
           flex: 1,
@@ -40,6 +39,9 @@ export function HomeScreen({ navigation }) {
           title="マイページへ"
           onPress={() => navigation.navigate("MyPage")}
         />
+      </View>
+      <View>
+        <Image source={require("./../../image/image.png")} />
       </View>
     </>
   );
