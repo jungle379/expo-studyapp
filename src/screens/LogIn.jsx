@@ -4,7 +4,7 @@ import { Button, View, Text, TextInput } from "react-native";
 export function LogInScreen({ navigation }) {
   return (
     <>
-      <View style={{ flex: 1, alignItems: "center", justifyContent: "center" }}>
+      <View style={{ flex: 2, alignItems: "center", justifyContent: "center" }}>
         <Text style={{ padding: 10 }}>メールアドレス</Text>
         <TextInput
           style={{
@@ -39,11 +39,8 @@ export function LogInScreen({ navigation }) {
           title="ログイン"
           onPress={() => navigation.navigate("Home")}
         />
-        <Button
-          style={{ margin: 20 }}
-          title="ホームへ"
-          onPress={() => navigation.navigate("Home")}
-        />
+        <Text style={{ margin: 20 }}></Text>
+        <Button title="ホームへ" onPress={() => navigation.navigate("Home")} />
       </View>
     </>
   );

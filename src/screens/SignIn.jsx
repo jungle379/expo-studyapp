@@ -4,7 +4,7 @@ import { Button, View, Text, TextInput } from "react-native";
 export function SignInScreen({ navigation }) {
   return (
     <>
-      <View style={{ flex: 1, alignItems: "center", justifyContent: "center" }}>
+      <View style={{ flex: 2, alignItems: "center", justifyContent: "center" }}>
         <Text style={{ padding: 10, margin: 10 }}>ニックネーム</Text>
         <TextInput
           style={{
