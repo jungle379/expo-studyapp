@@ -23,7 +23,7 @@ export function LogInScreen({ navigation }) {
             borderBottomWidth: 1,
             borderBottomColor: "#ccc",
           }}
-          placeholder="例:tanaka123"
+          placeholder="例:Tanaka123"
         />
       </View>
       <View
