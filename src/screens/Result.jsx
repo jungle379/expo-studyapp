@@ -9,7 +9,7 @@ export function ResultScreen({ navigation }) {
       </Text>
       <Button
         title="ホームページへ"
-        onPress={() => navigation.navigate("Home")}
+        onPress={() => navigation.navigate("Home2")}
       />
     </View>
   );

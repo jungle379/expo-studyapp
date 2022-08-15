@@ -37,10 +37,13 @@ export function LogInScreen({ navigation }) {
         <Button
           style={{ margin: 20 }}
           title="ログイン"
-          onPress={() => navigation.navigate("Home")}
+          onPress={() => navigation.navigate("Home2")}
         />
         <Text style={{ margin: 20 }}></Text>
-        <Button title="ホームへ" onPress={() => navigation.navigate("Home")} />
+        <Button
+          title="キャンセル"
+          onPress={() => navigation.navigate("Home")}
+        />
       </View>
     </>
   );

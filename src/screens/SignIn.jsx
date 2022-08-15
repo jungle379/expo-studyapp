@@ -49,7 +49,10 @@ export function SignInScreen({ navigation }) {
           onPress={() => navigation.navigate("Result")}
         />
         <Text style={{ margin: 20 }}></Text>
-        <Button title="ホームへ" onPress={() => navigation.navigate("Home")} />
+        <Button
+          title="キャンセル"
+          onPress={() => navigation.navigate("Home")}
+        />
       </View>
     </>
   );

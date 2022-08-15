@@ -41,7 +41,7 @@ export function CreateScreen({ navigation }) {
         <Text style={{ margin: 10 }}></Text>
         <Button
           title="戻る"
-          onPress={() => navigation.navigate("Home")}
+          onPress={() => navigation.navigate("Home2")}
         ></Button>
       </View>
     </>

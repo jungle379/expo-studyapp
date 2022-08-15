@@ -8,6 +8,7 @@ import { CreateScreen } from "./src/screens/Create";
 import { PostScreen } from "./src/screens/Post";
 import { MyPageScreen } from "./src/screens/MyPage";
 import { HomeScreen } from "./src/screens/Home";
+import { Home2Screen } from "./src/screens/Home2";
 
 const Stack = createNativeStackNavigator();
 
@@ -18,6 +19,13 @@ function App() {
         <Stack.Screen
           name="Home"
           component={HomeScreen}
+          options={{
+            title: "ホームページ",
+          }}
+        />
+        <Stack.Screen
+          name="Home2"
+          component={Home2Screen}
           options={{
             title: "ホームページ",
           }}

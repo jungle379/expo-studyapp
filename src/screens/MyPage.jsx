@@ -14,7 +14,7 @@ export function MyPageScreen({ navigation }) {
       <Text style={{ padding: 20 }}></Text>
       <Button
         title="ホームへ戻る"
-        onPress={() => navigation.navigate("Home")}
+        onPress={() => navigation.navigate("Home2")}
       />
     </View>
   );
