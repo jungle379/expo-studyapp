@@ -26,6 +26,15 @@ export function HomeScreen({ navigation }) {
       <View
         style={{
           flex: 1,
+          alignItems: "center",
+          justifyContent: "center",
+        }}
+      >
+        Hello World!!
+      </View>
+      <View
+        style={{
+          flex: 1,
           alignItems: "flex-start",
           justifyContent: "space-evenly",
           flexDirection: "row",
