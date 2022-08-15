@@ -25,7 +25,7 @@ export function HomeScreen({ navigation }) {
       </View>
       <View
         style={{
-          flex: 1,
+          flex: 2,
           alignItems: "center",
           justifyContent: "center",
         }}
@@ -48,9 +48,6 @@ export function HomeScreen({ navigation }) {
           title="マイページへ"
           onPress={() => navigation.navigate("MyPage")}
         />
-      </View>
-      <View>
-        <Image source={require("./../../image/image.png")} />
       </View>
     </>
   );

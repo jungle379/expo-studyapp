@@ -14,7 +14,7 @@ export function LogInScreen({ navigation }) {
             borderBottomColor: "#ccc",
           }}
           placeholder="例:tanaka@gmail.com"
-        />{" "}
+        />
         <Text style={{ padding: 10 }}>パスワード</Text>
         <TextInput
           style={{
