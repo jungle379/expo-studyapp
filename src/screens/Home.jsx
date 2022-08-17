@@ -11,7 +11,7 @@ export function HomeScreen({ navigation }) {
           alignItems: "flex-start",
           justifyContent: "flex-end",
           paddingRight: 40,
-          marginTop: 20,
+          paddingTop: 20,
           backgroundColor: "lightpink",
         }}
       >
