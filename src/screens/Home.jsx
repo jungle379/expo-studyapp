@@ -12,6 +12,7 @@ export function HomeScreen({ navigation }) {
           justifyContent: "flex-end",
           paddingRight: 40,
           marginTop: 20,
+          backgroundColor: "lightpink",
         }}
       >
         <Text style={{ padding: 20 }}></Text>
@@ -27,6 +28,7 @@ export function HomeScreen({ navigation }) {
           flex: 2,
           alignItems: "center",
           justifyContent: "center",
+          backgroundColor: "lightpink",
         }}
       >
         Hello World!!
@@ -37,6 +39,7 @@ export function HomeScreen({ navigation }) {
           alignItems: "flex-start",
           justifyContent: "space-evenly",
           flexDirection: "row",
+          backgroundColor: "lightpink",
         }}
       >
         <Button
