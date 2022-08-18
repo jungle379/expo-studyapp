@@ -31,7 +31,7 @@ export function HomeScreen({ navigation }) {
           backgroundColor: "lightpink",
         }}
       >
-        Hello World!!
+        <Text style={{ fontSize: 30 }}>Hello World!!</Text>
       </View>
       <View
         style={{

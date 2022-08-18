@@ -1,5 +1,5 @@
 import * as React from "react";
-import { Button, View } from "react-native";
+import { Button, View, Text } from "react-native";
 
 export function Home2Screen({ navigation }) {
   return (
@@ -12,7 +12,7 @@ export function Home2Screen({ navigation }) {
           backgroundColor: "lightblue",
         }}
       >
-        Hello World!!
+        <Text style={{ fontSize: 40 }}>Hello World!!</Text>
       </View>
       <View
         style={{
