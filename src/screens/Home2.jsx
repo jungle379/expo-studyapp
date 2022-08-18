@@ -9,6 +9,7 @@ export function Home2Screen({ navigation }) {
           flex: 2,
           alignItems: "center",
           justifyContent: "center",
+          backgroundColor: "lightblue",
         }}
       >
         Hello World!!
@@ -19,6 +20,7 @@ export function Home2Screen({ navigation }) {
           alignItems: "flex-start",
           justifyContent: "space-evenly",
           flexDirection: "row",
+          backgroundColor: "lightblue",
         }}
       >
         <Button
