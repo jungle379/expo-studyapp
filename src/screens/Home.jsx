@@ -7,7 +7,8 @@ export function HomeScreen({ navigation }) {
       <View
         style={{
           alignItem: "flex-start",
-          marginTop: 20,
+          paddingTop: 20,
+          backgroundColor: "lightpink",
         }}
       >
         <Text style={{ fontSize: 40 }}>Expo_study_app</Text>
