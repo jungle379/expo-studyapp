@@ -6,6 +6,14 @@ export function HomeScreen({ navigation }) {
     <>
       <View
         style={{
+          alignItem: "flex-start",
+          marginTop: 20,
+        }}
+      >
+        <Text style={{ fontSize: 40 }}>Expo_study_app</Text>
+      </View>
+      <View
+        style={{
           flex: 2,
           flexDirection: "row",
           alignItems: "flex-start",
