@@ -49,7 +49,7 @@ export function Home2Screen({ navigation }) {
           alignItems: "flex-start",
           justifyContent: "space-evenly",
           flexDirection: "row",
-          backgroundColor: "lightpink",
+          backgroundColor: "lightblue",
         }}
       >
         <Text style={{ justifyContent: "center", fontSize: 20 }}>footer</Text>

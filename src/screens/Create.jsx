@@ -9,7 +9,7 @@ export function CreateScreen({ navigation }) {
         <TextInput
           style={{
             width: "50%",
-            height: "5%",
+            height: "10%",
             borderBottomWidth: 1,
             borderBottomColor: "#ccc",
           }}
@@ -34,15 +34,9 @@ export function CreateScreen({ navigation }) {
           justifyContent: "center",
         }}
       >
-        <Button
-          title="投稿する"
-          onPress={() => navigation.navigate("Post")}
-        ></Button>
-        <Text style={{ margin: 10 }}></Text>
-        <Button
-          title="戻る"
-          onPress={() => navigation.navigate("Home2")}
-        ></Button>
+        <Button title="投稿する" onPress={() => navigation.navigate("Post")} />
+        <Text style={{ margin: 20 }}></Text>
+        <Button title="戻る" onPress={() => navigation.navigate("Home2")} />
       </View>
     </>
   );
