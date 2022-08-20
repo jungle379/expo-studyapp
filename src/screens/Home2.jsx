@@ -6,6 +6,17 @@ export function Home2Screen({ navigation }) {
     <>
       <View
         style={{
+          alignItem: "flex-start",
+          paddingTop: 20,
+          backgroundColor: "lightblue",
+        }}
+      >
+        <Text style={{ fontSize: 40, fontWeight: "bold", color: "green" }}>
+          Expo_study_app
+        </Text>
+      </View>
+      <View
+        style={{
           flex: 2,
           alignItems: "center",
           justifyContent: "center",

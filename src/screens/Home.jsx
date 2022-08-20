@@ -1,5 +1,6 @@
 import * as React from "react";
 import { Button, View, Text } from "react-native";
+import { YellowBox } from "react-native-web";
 
 export function HomeScreen({ navigation }) {
   return (
@@ -11,7 +12,9 @@ export function HomeScreen({ navigation }) {
           backgroundColor: "lightpink",
         }}
       >
-        <Text style={{ fontSize: 40 }}>Expo_study_app</Text>
+        <Text style={{ fontSize: 40, fontWeight: "bold", color: "green" }}>
+          Expo_study_app
+        </Text>
       </View>
       <View
         style={{
