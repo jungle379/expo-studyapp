@@ -9,6 +9,7 @@ export function MyPageScreen({ navigation }) {
         alignItems: "center",
         justifyContent: "center",
         flexDirection: "row",
+        backgroundColor: "green",
       }}
     >
       <Text style={{ padding: 20 }}></Text>
