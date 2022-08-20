@@ -27,7 +27,7 @@ export function HomeScreen({ navigation }) {
           backgroundColor: "lightpink",
         }}
       >
-        <Text style={{ paddingRight: 30, fontSize: 20 }}>Let's Log_in →</Text>
+        <Text style={{ paddingRight: 30, fontSize: 20 }}>Let's Log_in!! →</Text>
         <Button
           title="サインイン"
           onPress={() => navigation.navigate("SignIn")}
