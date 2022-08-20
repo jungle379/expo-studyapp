@@ -9,7 +9,7 @@ export function SignInScreen({ navigation }) {
         <TextInput
           style={{
             width: "50%",
-            height: "5%",
+            height: "10%",
             borderBottomWidth: 1,
             borderBottomColor: "#ccc",
           }}
@@ -19,7 +19,7 @@ export function SignInScreen({ navigation }) {
         <TextInput
           style={{
             width: "50%",
-            height: "5%",
+            height: "10%",
             borderBottomWidth: 1,
             borderBottomColor: "#ccc",
           }}
@@ -29,7 +29,7 @@ export function SignInScreen({ navigation }) {
         <TextInput
           style={{
             width: "50%",
-            height: "5%",
+            height: "10%",
             borderBottomWidth: 1,
             borderBottomColor: "#ccc",
           }}
