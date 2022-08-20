@@ -43,7 +43,7 @@ export function HomeScreen({ navigation }) {
           backgroundColor: "lightpink",
         }}
       >
-        <Text style={{ fontSize: 30 }}>Hello World!!</Text>
+        <Text style={{ fontSize: 30, fontWeight: "bold" }}>Hello World!!</Text>
       </View>
       <View
         style={{
@@ -62,6 +62,17 @@ export function HomeScreen({ navigation }) {
           title="マイページへ"
           onPress={() => navigation.navigate("MyPage")}
         />
+      </View>
+      <View
+        style={{
+          flex: 1,
+          alignItems: "flex-start",
+          justifyContent: "space-evenly",
+          flexDirection: "row",
+          backgroundColor: "lightpink",
+        }}
+      >
+        <Text style={{ justifyContent: "center", fontSize: 20 }}>footer</Text>
       </View>
     </>
   );

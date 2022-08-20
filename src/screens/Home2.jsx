@@ -43,6 +43,17 @@ export function Home2Screen({ navigation }) {
           onPress={() => navigation.navigate("MyPage")}
         />
       </View>
+      <View
+        style={{
+          flex: 1,
+          alignItems: "flex-start",
+          justifyContent: "space-evenly",
+          flexDirection: "row",
+          backgroundColor: "lightpink",
+        }}
+      >
+        <Text style={{ justifyContent: "center", fontSize: 20 }}>footer</Text>
+      </View>
     </>
   );
 }
