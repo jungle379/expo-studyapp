@@ -71,7 +71,9 @@ export function HomeScreen({ navigation }) {
           backgroundColor: "lightpink",
         }}
       >
-        <Text style={{ justifyContent: "center", fontSize: 20 }}>footer</Text>
+        <Text style={{ justifyContent: "center", fontSize: 20, marginTop: 20 }}>
+          footer
+        </Text>
       </View>
     </>
   );

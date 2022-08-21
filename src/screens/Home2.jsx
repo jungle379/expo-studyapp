@@ -46,13 +46,28 @@ export function Home2Screen({ navigation }) {
       <View
         style={{
           flex: 1,
+          width: "100%",
+          height: "40%",
+          backgroundColor: "lightblue",
+        }}
+      >
+        <Button
+          title="新着通知"
+          onPress={() => navigation.navigate("Create")}
+        />
+      </View>
+      <View
+        style={{
+          flex: 1,
           alignItems: "flex-start",
           justifyContent: "space-evenly",
           flexDirection: "row",
           backgroundColor: "lightblue",
         }}
       >
-        <Text style={{ justifyContent: "center", fontSize: 20 }}>footer</Text>
+        <Text style={{ justifyContent: "center", fontSize: 20, marginTop: 20 }}>
+          footer
+        </Text>
       </View>
     </>
   );
