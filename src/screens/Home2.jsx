@@ -47,7 +47,6 @@ export function Home2Screen({ navigation }) {
         style={{
           flex: 1,
           width: "100%",
-          height: "40%",
           backgroundColor: "lightblue",
         }}
       >
