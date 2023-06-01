@@ -15,8 +15,15 @@ export default class Footer extends Component {
           }}
         >
           <Text
-            style={{ justifyContent: "center", fontSize: 20, marginTop: 20 }}
-          ></Text>
+            style={{
+              justifyContent: "center",
+              fontWeight: 700,
+              fontSize: 15,
+              marginTop: 20,
+            }}
+          >
+            built in 2023
+          </Text>
         </View>
       </>
     );

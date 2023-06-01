@@ -1,5 +1,6 @@
 import { Component } from "react";
 import { View, Text } from "react-native";
+import Icon from "react-native-vector-icons/FontAwesome5";
 
 export default class Header extends Component {
   render() {
@@ -13,6 +14,7 @@ export default class Header extends Component {
             backgroundColor: "lightblue",
           }}
         >
+          <Icon name="horse-head" size={50} />
           <Text
             style={{
               fontSize: 15,
