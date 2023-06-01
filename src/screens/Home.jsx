@@ -1,5 +1,5 @@
 import * as React from "react";
-import { Button, View, Text } from "react-native";
+import { Button, View } from "react-native";
 import Footer from "../components/Footer";
 import Header from "../components/Header";
 
@@ -17,7 +17,12 @@ export function HomeScreen({ navigation }) {
           paddingTop: 20,
           backgroundColor: "lightgreen",
         }}
-      ></View>
+      >
+        <Button
+          title="はじめに"
+          onPress={() => navigation.navigate("Atfirst")}
+        />
+      </View>
       <Footer />
     </>
   );
