@@ -1,16 +1,18 @@
 import * as React from "react";
 import { Button, View, Text } from "react-native";
 import Icon from "react-native-vector-icons/FontAwesome5";
+import Icon2 from "react-native-vector-icons/AntDesign";
 
 export function HomeScreen({ navigation }) {
   return (
     <>
       <View
         style={{
-          alignItem: "flex-start",
+          alignItem: "space-between",
           flexDirection: "row",
           padding: 20,
           backgroundColor: "lightblue",
+          justifyContent: "space-between",
         }}
       >
         <Icon name="horse-head" size={50} />
@@ -19,7 +21,6 @@ export function HomeScreen({ navigation }) {
             fontSize: 15,
             paddingTop: 20,
             paddingRight: 20,
-            paddingLeft: 200,
             fontWeight: "bold",
             color: "black",
             textAlign: "right",
@@ -41,7 +42,6 @@ export function HomeScreen({ navigation }) {
       ></View>
       <View
         style={{
-          flex: 1,
           alignItems: "flex-start",
           justifyContent: "space-evenly",
           flexDirection: "row",
@@ -52,12 +52,24 @@ export function HomeScreen({ navigation }) {
           style={{
             justifyContent: "center",
             fontWeight: 700,
-            fontSize: 15,
+            fontSize: 20,
             marginTop: 20,
           }}
         >
           built in 2023
         </Text>
+      </View>
+      <View
+        style={{
+          flex: 1,
+          alignItems: "flex-start",
+          justifyContent: "space-evenly",
+          flexDirection: "row",
+          backgroundColor: "goldenrod",
+          paddingTop: 20,
+        }}
+      >
+        <Icon2 name="folderopen" size={50} />
       </View>
     </>
   );
