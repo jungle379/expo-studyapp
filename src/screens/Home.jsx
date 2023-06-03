@@ -66,7 +66,7 @@ export function HomeScreen({ navigation }) {
           justifyContent: "space-evenly",
           flexDirection: "row",
           backgroundColor: "goldenrod",
-          paddingTop: 20,
+          paddingTop: 30,
         }}
       >
         <Icon2 name="folderopen" size={50} />
