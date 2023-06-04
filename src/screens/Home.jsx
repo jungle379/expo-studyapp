@@ -1,21 +1,23 @@
 import * as React from "react";
-import { Button, View, Text } from "react-native";
+import { Button, View, TouchableOpacity } from "react-native";
 import Icon from "react-native-vector-icons/FontAwesome5";
-import Icon2 from "react-native-vector-icons/AntDesign";
+import Footer from "../components/Footer";
 
 export function HomeScreen({ navigation }) {
   return (
     <>
       <View
         style={{
-          alignItem: "space-between",
+          alignItems: "space-between",
           flexDirection: "row",
           padding: 20,
           backgroundColor: "lightblue",
           justifyContent: "space-between",
         }}
       >
-        <Icon name="horse-head" size={50} />
+        <TouchableOpacity onPress={() => navigation.navigate("Home")}>
+          <Icon name="horse-head" size={50} />
+        </TouchableOpacity>
         <Button
           style={{
             fontSize: 15,
@@ -40,37 +42,7 @@ export function HomeScreen({ navigation }) {
           backgroundColor: "lightgreen",
         }}
       ></View>
-      <View
-        style={{
-          alignItems: "flex-start",
-          justifyContent: "space-evenly",
-          flexDirection: "row",
-          backgroundColor: "goldenrod",
-        }}
-      >
-        <Text
-          style={{
-            justifyContent: "center",
-            fontWeight: 700,
-            fontSize: 20,
-            marginTop: 20,
-          }}
-        >
-          built in 2023
-        </Text>
-      </View>
-      <View
-        style={{
-          flex: 1,
-          alignItems: "flex-start",
-          justifyContent: "space-evenly",
-          flexDirection: "row",
-          backgroundColor: "goldenrod",
-          paddingTop: 30,
-        }}
-      >
-        <Icon2 name="folderopen" size={50} />
-      </View>
+      <Footer navigation={navigation} />
     </>
   );
 }

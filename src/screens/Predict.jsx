@@ -19,7 +19,7 @@ const Item = [
   { id: 7, title: "騎手・競馬場の特徴も認識の上、予想する" },
 ];
 
-export function AtfirstScreen({ navigation }) {
+export function Predict({ navigation }) {
   return (
     <>
       <Header navigation={navigation} />
@@ -47,7 +47,7 @@ export function AtfirstScreen({ navigation }) {
           }}
         />
       </View>
-      <Footer />
+      <Footer navigation={navigation} />
     </>
   );
 }
